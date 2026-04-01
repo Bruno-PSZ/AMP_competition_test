@@ -1,0 +1,21 @@
+[project]
+name = "my-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bruno Puczko-Szymański", email = "bruno.puczko-szymanski@core3.pl" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "seqme>=0.5.0",
+]
+
+[project.scripts]
+my-model = "my_model:main"
+generate_broad_spectrum = "my_model.generate:main"
+generate_gram_pos = "my_model.generate:main"
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
